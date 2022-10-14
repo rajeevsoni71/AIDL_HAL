@@ -1,0 +1,11 @@
+android_app {
+    name: "MqttTestAppSubscribe",
+    platform_apis: true,
+    srcs: [
+        "src/**/*.java"
+    ],
+    static_libs: [
+        "android.hardware.mqtt-V2-java"
+    ],
+    manifest:"AndroidManifest.xml"
+}

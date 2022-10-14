@@ -1,0 +1,25 @@
+1. place the whole folder under
+hardware/interfaces/
+
+2. After folder is copied into above directory then run below command at your aosp code base
+mmm hardware/interfaces/mqtt
+
+3. you will get some error and that gerror say to execute below command first before running above command
+mm android.hardware.mqtt-update-api
+
+4. Step 2
+
+5. add the modules in product packages of your target build.
+#Mqtt Hal
+PRODUCT_PACKAGES += \
+    android.hardware.mqtt \
+    android.hardware.mqtt-service \
+    MqttTestAppSubscribe \
+    MqttTestAppPublish
+
+6. sepolicy
+
+7. copy the sepoilcy into your sepolicy folder direclty
+
+8. do full make after deleted intermediates from out folder just to check everything is OK
+make -j8

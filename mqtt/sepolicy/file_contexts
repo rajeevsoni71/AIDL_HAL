@@ -1,0 +1,2 @@
+/(vendor|system/vendor)/bin/hw/android\.hardware\.mqtt-service           u:object_r:hal_mqtt_default_exec:s0
+

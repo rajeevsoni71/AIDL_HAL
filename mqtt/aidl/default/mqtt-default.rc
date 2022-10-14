@@ -1,0 +1,9 @@
+service vendor.mqtt-default /vendor/bin/hw/android.hardware.mqtt-service 192.168.0.104
+    interface aidl android.hardware.mqtt.IMqtt/default
+    class hal
+    user system
+    group system
+
+
+#on property:sys.boot_completed=1
+#    start vendor.mqtt-default
